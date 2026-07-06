@@ -19,7 +19,7 @@ async function bootstrap() {
   });
   const prisma = new PrismaClient({ adapter: new PrismaPg(pool) }) as any;
 
-  const dataPath = path.join(__dirname, '..', 'prisma', 'seed-data.json');
+  const dataPath = path.join(__dirname, '..', '..', 'prisma', 'seed-data.json');
   const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
 
   const upsert = (model: any, where: any, row: any) =>
