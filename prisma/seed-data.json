@@ -1,0 +1,578 @@
+{
+  "users": [
+    {
+      "id": "cmq6olcto0000r6secctwxplv",
+      "email": "test@example.com",
+      "password": "$2b$10$Rj2JmZHjserxsnpZNw3sQudKlR0brVj.J5P7SitTr.4PnbcCGRJjC",
+      "name": "Test User",
+      "role": "CUSTOMER",
+      "createdAt": "2026-06-09T07:34:15.084Z",
+      "updatedAt": "2026-06-09T07:34:15.084Z"
+    },
+    {
+      "id": "cmq6ps3b10000jmse9l0xxa6g",
+      "email": "ikram@gmail.com",
+      "password": "$2b$10$O8nuslZ58X/Wn80/hFTmp.8CXnW4IAjlRVSKNS7abMZznEcvPerCS",
+      "name": "ikram",
+      "role": "CUSTOMER",
+      "createdAt": "2026-06-09T08:07:28.957Z",
+      "updatedAt": "2026-06-09T08:07:28.957Z"
+    },
+    {
+      "id": "cmq6q8ff00000xrsecab672pq",
+      "email": "admin@example.com",
+      "password": "$2b$10$JKbxpnfLSAvPqC1.135ehOvcVPKE5uhgjto4/N1ZCfYr9thdVf3YW",
+      "name": "Admin",
+      "role": "ADMIN",
+      "createdAt": "2026-06-09T08:20:11.148Z",
+      "updatedAt": "2026-06-09T08:20:11.148Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cmqb0rxmn0000aqse4ovxd2lq",
+      "name": "Skincare",
+      "slug": "skincare",
+      "parentId": null,
+      "createdAt": "2026-06-12T08:26:22.079Z",
+      "updatedAt": "2026-06-12T08:26:22.079Z"
+    }
+  ],
+  "brands": [
+    {
+      "id": "cmqavpurp00004use39d9lg75",
+      "name": "Dermoqore",
+      "slug": "dermoqore",
+      "logo": null,
+      "createdAt": "2026-06-12T06:04:46.981Z"
+    }
+  ],
+  "deliveryCharges": [
+    {
+      "id": "cmqidm9t700007tseazng3iku",
+      "zone": "INSIDE_DHAKA",
+      "charge": "60.00",
+      "minOrder": "500.00",
+      "createdAt": "2026-06-17T12:00:16.171Z",
+      "updatedAt": "2026-06-17T12:00:16.171Z"
+    },
+    {
+      "id": "cmqidma7k00017tseowudimb3",
+      "zone": "OUTSIDE_DHAKA",
+      "charge": "80.00",
+      "minOrder": "1000.00",
+      "createdAt": "2026-06-17T12:00:16.688Z",
+      "updatedAt": "2026-06-17T12:00:16.688Z"
+    }
+  ],
+  "companyInfos": [],
+  "announcementBars": [
+    {
+      "id": "cmql02oiy0000s7seqklxrabd",
+      "message": "FREE DELIVERY ON ORDERS OVER ৳1499 | CASH ON DELIVERY AVAILABLE",
+      "link": "/ofter",
+      "order": 0,
+      "isActive": true,
+      "createdAt": "2026-06-19T08:04:25.643Z",
+      "updatedAt": "2026-06-19T09:47:26.910Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "cmr7rvfzg0000bgolmu2xv1aa",
+      "name": "Fatema Begum",
+      "description": "মাত্র ৬ সপ্তাহ ব্যবহারে আমার মুখের ব্রণের দাগ অনেকটাই কমে গেছে। সত্যিই অবাক হয়েছি!",
+      "rating": 5,
+      "image": "https://i.pravatar.cc/150?img=1",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:33:33.100Z",
+      "updatedAt": "2026-07-05T06:33:33.100Z"
+    },
+    {
+      "id": "cmr7rvg760001bgol8c1zmphd",
+      "name": "Rahela Khatun",
+      "description": "আমার মেছতার সমস্যা ছিল অনেক দিন ধরে। Dermoqore ব্যবহারে দাগগুলো হালকা হতে শুরু করেছে।",
+      "rating": 5,
+      "image": "https://i.pravatar.cc/150?img=5",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:33:33.378Z",
+      "updatedAt": "2026-07-05T06:33:33.378Z"
+    },
+    {
+      "id": "cmr7rvget0002bgola6va45vx",
+      "name": "Nasrin Akter",
+      "description": "ডার্ক স্পট দূর করতে অনেক প্রোডাক্ট ব্যবহার করেছি। Dermoqore ব্যবহারে সত্যিকারের পরিবর্তন দেখতে পাচ্ছি।",
+      "rating": 4,
+      "image": "https://i.pravatar.cc/150?img=9",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:33:33.653Z",
+      "updatedAt": "2026-07-05T06:33:33.653Z"
+    },
+    {
+      "id": "cmr7rvgmh0003bgols3gslyp9",
+      "name": "Sumaiya Islam",
+      "description": "স্কিন এখন অনেক উজ্জ্বল দেখাচ্ছে। ব্রণের দাগ কমেছে এবং স্কিন হাইড্রেটেড থাকছে।",
+      "rating": 5,
+      "image": "https://i.pravatar.cc/150?img=20",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:33:33.929Z",
+      "updatedAt": "2026-07-05T06:33:33.929Z"
+    },
+    {
+      "id": "cmr7rvgu40004bgoldo6ukrn1",
+      "name": "Tahmina Parvin",
+      "description": "সেনসিটিভ স্কিনেও কোনো সমস্যা হয়নি। ৪ সপ্তাহ পর থেকে পরিবর্তন বুঝতে পারছি।",
+      "rating": 5,
+      "image": "https://i.pravatar.cc/150?img=25",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:33:34.204Z",
+      "updatedAt": "2026-07-05T06:33:34.204Z"
+    },
+    {
+      "id": "cmr7rvh1s0005bgolulto1nyt",
+      "name": "Roksana Begum",
+      "description": "পিগমেন্টেশনের সমস্যায় অনেক কষ্ট পাচ্ছিলাম। এই সিরামটি ব্যবহার করে সত্যিই উপকার পেয়েছি।",
+      "rating": 4,
+      "image": "https://i.pravatar.cc/150?img=32",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:33:34.480Z",
+      "updatedAt": "2026-07-05T06:33:34.480Z"
+    },
+    {
+      "id": "cmr7rvh9h0006bgol74i1t6ok",
+      "name": "Sharmin Sultana",
+      "description": "প্রোডাক্টটি সম্পূর্ণ ফ্রেগ্রেন্স ফ্রি, তাই স্কিনে কোনো জ্বালাপোড়া নেই। ডার্ক স্পট ধীরে ধীরে কমছে।",
+      "rating": 5,
+      "image": "https://i.pravatar.cc/150?img=44",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:33:34.757Z",
+      "updatedAt": "2026-07-05T06:33:34.757Z"
+    },
+    {
+      "id": "cmr7scyqm0002csol1eg1agvi",
+      "name": "Md. Saharior Ridoy",
+      "description": "see our review section there are review create system.. but i want make it professional design like google.. very simpll compact and less space . and full width use so not take the h screen much",
+      "rating": 5,
+      "image": "https://res.cloudinary.com/dakq6amg8/image/upload/v1783255631/reviews/d69r7shtrxcvujpiykid.jpg",
+      "status": "APPROVED",
+      "createdAt": "2026-07-05T06:47:10.558Z",
+      "updatedAt": "2026-07-05T06:47:22.583Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "cmq8sl8490000q7seepnbs7ve",
+      "name": "Twitter",
+      "segment": "the",
+      "status": "Active",
+      "avatar": "TW",
+      "color": "bg-amber-100 text-amber-800",
+      "createdAt": "2026-06-10T19:01:39.801Z",
+      "updatedAt": "2026-06-10T19:01:39.801Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": "cmq8sl8wo0001q7se3si2t00h",
+      "title": "",
+      "tag": "",
+      "description": null,
+      "imageType": "lifestyle",
+      "device": "desktop",
+      "imageUrl": "https://res.cloudinary.com/dakq6amg8/image/upload/v1781140972/admin/banner/fb5s3ekbfqaujqtaizzm.jpg",
+      "status": "Live",
+      "isActive": false,
+      "clientId": "cmq8sl8490000q7seepnbs7ve",
+      "createdAt": "2026-06-10T19:01:40.824Z",
+      "updatedAt": "2026-06-11T22:35:47.034Z",
+      "categoryId": null
+    },
+    {
+      "id": "cmqag0iv90008laseake4zgkm",
+      "title": "Real Ingredients.\nReal Results.",
+      "tag": "",
+      "description": null,
+      "imageType": "ingredient",
+      "device": "desktop",
+      "imageUrl": "https://res.cloudinary.com/dakq6amg8/image/upload/v1781239567/admin/banner/brxarlzqf08eemnepdx2.png",
+      "status": "Draft",
+      "isActive": true,
+      "clientId": "cmq8sl8490000q7seepnbs7ve",
+      "createdAt": "2026-06-11T22:45:10.917Z",
+      "updatedAt": "2026-06-24T11:00:18.704Z",
+      "categoryId": null
+    }
+  ],
+  "products": [
+    {
+      "id": "cmqd60ydt0000ykserpvie6nv",
+      "name": "Spot Correcting Serum",
+      "slug": "spot-correcting-serum",
+      "shortDescription": "Tone‑evening, brightening & calming water‑light serum.",
+      "description": "<h2><strong>Bright, Even, and Calm Skin in Every Drop</strong></h2><p>Your skin deserves more than promises. <strong>Radiate</strong> is a clinically-formulated brightening serum that actually works — fading dark spots, calming sensitivity, and giving your skin a smooth, healthy glow without irritation.</p><h2></h2><h2><strong>Why It Works</strong></h2><p>Every ingredient in Radiate is selected for performance <em>and</em> gentleness. Nothing unnecessary, nothing harsh.</p><ul><li><p><strong>Niacinamide (5%)</strong> – evens tone, reduces dullness, strengthens your skin barrier.</p></li><li><p><strong>Alpha Arbutin (3%)</strong> – targets dark spots and pigmentation for visibly clearer skin.</p></li><li><p><strong>Panthenol (Pro-Vitamin B5, 3%)</strong> – hydrates deeply while calming redness and inflammation.</p></li><li><p><strong>Madecassoside (0.3%)</strong> – the active compound from Centella Asiatica that speeds up repair and soothes irritation.</p></li><li><p><strong>Beta-Glucan &amp; Hyaluronic Acid</strong> – provide that instant plump, smooth feeling.</p></li><li><p><strong>Glycerin</strong> – keeps hydration locked in, ensuring comfort even for sensitive skin.</p></li></ul><h4></h4><h2><strong>Feels Like:</strong></h2><p>A <strong>light, water-based texture</strong> that absorbs instantly. No stickiness, no residue.</p><p>Perfect under sunscreen or moisturizer, even in humid Bangladeshi weather.</p><p></p><h2><strong>Who It’s For:</strong></h2><ul><li><p>Uneven tone or dark spots</p></li><li><p>Dull, tired skin</p></li><li><p>Redness or sensitivity</p></li><li><p>Those who want a <em>visible glow</em> without strong actives or acids</p></li></ul><p></p><p><strong>Note: During pregnancy, use 3 times/week max. Also, if used in the morning, SPF is a must.</strong></p><h4></h4><h2><strong>Real Results</strong></h2><p>In customer testing, most users noticed:</p><ul><li><p>Brighter tone within 2 weeks</p></li><li><p>Visible reduction in dark spots by week 4</p></li><li><p>Calmer, smoother skin feel immediately after use</p></li></ul><p></p>",
+      "price": "790.00",
+      "comparePrice": "1190.00",
+      "stock": 101,
+      "skinType": "All Skin Types",
+      "status": "ACTIVE",
+      "categoryId": "cmqb0rxmn0000aqse4ovxd2lq",
+      "brandId": "cmqavpurp00004use39d9lg75",
+      "createdAt": "2026-06-13T20:28:53.393Z",
+      "updatedAt": "2026-07-05T04:22:33.578Z"
+    },
+    {
+      "id": "cmr7wrfhf000048ol2nivwxoy",
+      "name": "DermoQore Spot Correcting Serum Combo 2 Pcs",
+      "slug": "dermoqore-spot-correcting-serum-combo-2-pcs",
+      "shortDescription": "ক্লিনিক্যাল ফর্মুলেশনে ব্রনের যে কোন দাগ, ডার্ক স্পট, হাইপারপিগমেন্টেশন আর মেছতাকে দূর করে স্কিনকে করুন আরো উজ্জ্বল।",
+      "description": "<p>ব্রনের যে কোন দাগ, ডার্ক স্পট, হাইপারপিগমেন্টেশন, মেছতা, ডালনেস দূর করার বিজ্ঞানভিত্তিক স্থায়ী সমাধান আছে। আমাদের ক্লিনিক্যালি প্রুভেন এই প্রোডাক্টটি নিয়মিত রুলস ফলো করে ব্যবহার করলে আপনার সমস্যা সমাধান হতে পারে। বিজ্ঞানভিত্তিক সমাধান মিথ্যা প্রতিশ্রুতি নয়, বরং রেজাল্টের উপর নির্ভর করে।</p>",
+      "price": "1500.00",
+      "comparePrice": "2700.00",
+      "stock": 1000,
+      "skinType": "Oily",
+      "status": "ACTIVE",
+      "categoryId": "cmqb0rxmn0000aqse4ovxd2lq",
+      "brandId": "cmqavpurp00004use39d9lg75",
+      "createdAt": "2026-07-05T08:50:23.907Z",
+      "updatedAt": "2026-07-05T08:50:23.907Z"
+    }
+  ],
+  "productImages": [
+    {
+      "id": "cmr7n70690002lkolfm8dmjq9",
+      "productId": "cmqd60ydt0000ykserpvie6nv",
+      "url": "https://res.cloudinary.com/dakq6amg8/image/upload/v1783246941/admin/products/x6dvpemmviow9hq3q9ga.png",
+      "alt": "IMG 20260626 001652 442 786642924.jpg  1  removebg preview",
+      "isPrimary": false,
+      "sortOrder": 0,
+      "createdAt": "2026-07-05T04:22:33.578Z"
+    },
+    {
+      "id": "cmr7n70690003lkolt1xpuv2w",
+      "productId": "cmqd60ydt0000ykserpvie6nv",
+      "url": "https://res.cloudinary.com/dakq6amg8/image/upload/v1783246946/admin/products/gxhrauzxmkpl4s5rliut.jpg",
+      "alt": "IMG 20260626 001652 442@786642924.jpg (1)",
+      "isPrimary": true,
+      "sortOrder": 1,
+      "createdAt": "2026-07-05T04:22:33.578Z"
+    },
+    {
+      "id": "cmr7wrfp7000148olgbjihi87",
+      "productId": "cmr7wrfhf000048ol2nivwxoy",
+      "url": "https://res.cloudinary.com/dakq6amg8/image/upload/v1783262914/admin/products/vgqcydi2smj6blbjyzf0.jpg",
+      "alt": "IMG 20260626 001907 012@786642927.jpg (1)",
+      "isPrimary": true,
+      "sortOrder": 0,
+      "createdAt": "2026-07-05T08:50:23.907Z"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "cmr7n70t50004lkol7zed61ov",
+      "productId": "cmqd60ydt0000ykserpvie6nv",
+      "name": "Aqua (Water), Niacinamide, Panthenol, Alpha-Arbutin, Beta-Glucan, Madecassoside, Glycerin, Sodium Hyaluronate, Disodium EDTA, Caprylyl Glycol, Diazolidinyl Urea (and) Iodopropynyl Butylcarbamate [Germall Plus], Citric Acid, Sodium Hydroxide.",
+      "percentage": null
+    }
+  ],
+  "productUsages": [
+    {
+      "id": "cmr7n71tf0005lkolpt055klb",
+      "productId": "cmqd60ydt0000ykserpvie6nv",
+      "stepNumber": 1,
+      "content": "Apply to a clean face and neck morning and night. Gently massage until it's set on the skin. SPF is must if used during day-time."
+    }
+  ],
+  "productBenefits": [],
+  "productSEOs": [
+    {
+      "id": "cmr7wrfwu000248ol8pgyfpsz",
+      "productId": "cmr7wrfhf000048ol2nivwxoy",
+      "metaTitle": "DermoQore Spot Correcting Serum",
+      "metaDescription": "ক্লিনিক্যাল ফর্মুলেশনে ব্রনের যে কোন দাগ, ডার্ক স্পট, হাইপারপিগমেন্টেশন আর মেছতাকে দূর করে স্কিনকে করুন আরো উজ্জ্বল।",
+      "metaKeyword": "Brightenign serum"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "cmqi3bvze00005zse4mao4wrm",
+      "title": "Born in Bangladesh, Built for Everyone: The Celeste Story",
+      "slug": "born-in-bangladesh-built-for-everyone-the-celeste-story",
+      "excerpt": null,
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Nowadays, skincare has become an important part of daily life. People are more aware of the health of their skin than ever before. It is very difficult to maintain a consistent skincare routine for ordinary people. \"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Because of high prices, complex rules, routines, and imported products. In Bangladesh, skincare often remains a luxury rather than a necessity. If you walk through any market or browse online stores of skincare products in Bangladesh. You will feel this scenario very well.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Yet the reality is simple. Everyone lives under the same sun. Everyone faces dust, pollution, and humidity. Everyone deserves healthy skin and the confidence that comes with it.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"What if quality skincare could be affordable skincare for everyone? Not for a small group of people?\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"This is where  enters the story. \"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"The Celeste has started its journey as one of the \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://thecelestebd.com/\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":null}},{\"type\":\"bold\"}],\"text\":\"science-backed skincare brand in Bangladesh\"},{\"type\":\"text\",\"text\":\". It has a vision of affordable skincare for everyone. This journey is more than just launching products. It is about challenging skincare-based inequality and breaking price barriers. And building a society where quality skincare for all will be assured.\"},{\"type\":\"hardBreak\"},{\"type\":\"text\",\"text\":\"The Beginning of a Vision: Building a Science-Backed Skincare Brand in Bangladesh\"}]},{\"type\":\"image\",\"attrs\":{\"src\":\"https://res.cloudinary.com/dakq6amg8/image/upload/v1781701665/admin/blog/sjt9wp4fim2yuwj3pul1.webp\",\"alt\":null,\"title\":null,\"width\":null,\"height\":null}},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null}}]}",
+      "featuredImage": "https://res.cloudinary.com/dakq6amg8/image/upload/v1781701500/admin/blog/mqthjkxvm8kmm6srazdo.webp",
+      "status": "PUBLISHED",
+      "featured": false,
+      "categoryId": "cmqb0rxmn0000aqse4ovxd2lq",
+      "authorId": "cmq6q8ff00000xrsecab672pq",
+      "createdAt": "2026-06-17T07:12:15.530Z",
+      "updatedAt": "2026-06-17T07:12:15.530Z"
+    },
+    {
+      "id": "cmqshe0g50000xjse49a4te7c",
+      "title": "How to build an affordable natural skincare routine",
+      "slug": "how-to-build-an-affordable-natural-skincare-routine",
+      "excerpt": null,
+      "content": "{\"type\":\"doc\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"n today's world, where the beauty industry offers a plethora of expensive skincare products, building a natural skincare routine, where less really is more, can help you achieve healthy and radiant skin that doesn't have to break the piggy bank.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Let me guide you through the simple process of building that effective and budget-friendly natural skincare routine that will leave your skin glowing and have you telling all your friends.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\" \"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"1. Get to know your skin type and skin goals\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"The first step in any natural skincare routine is to understand your skin type and its specific needs. This knowledge will help you select the right natural products and ingredients for your skin type. Whether you have oily, dry, sensitive, or combination skin, identifying your skin type allows you to tailor your routine accordingly and avoid unnecessary expenses on products that may not work for you.\"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"2. Simplify Your Routine\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Building an affordable, natural skincare routine begins with simplicity, as I have already said, less really is more when it comes to skincare. Avoid succumbing for the allure of multiple expensive products and focus on a few key essentials that address your skin's needs. A minimalistic routine can be just as effective as an extensive one. The basics usually include a cleanser, toner and moisturiser.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"You may like:\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Cleanser: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/canvas-organic-moisturising-cream-cleanser?_pos=1&_psq=canvas&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"Canvas Cream Cleanser\"}}],\"text\":\"Canvas: Organic Moisturising Cream Cleanser\"},{\"type\":\"text\",\"text\":\" or \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/powder-to-foam-cleansing-grains?_pos=1&_psq=naked&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"naked powder to foam cleanser\"}}],\"text\":\"Naked: Powder To Foam Cleanser\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Toner: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/organic-rose-water-facial-toner?_pos=3&_psq=wild&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"wild rose organic rose water toner\"}}],\"text\":\"Wild Rose: Organic Rose Water Toner \"},{\"type\":\"text\",\"text\":\"or \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/organic-rose-toner-witch-hazel?_pos=1&_psq=wild&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"wild flower rose water and witch hazel toner\"}}],\"text\":\"Wild Flower: Organic Rose Water with Witch Hazel Toner\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Moisturiser: \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/hemp-seed-oil-organic?_pos=2&_psq=super&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"super seed hemp seed oil\"}}],\"text\":\"Super Seed: Hemp Seed Deep Moisture Face Oil \"},{\"type\":\"text\",\"text\":\"or \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/radiance-beauty-serum?_pos=1&_psq=rad&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"radiance face oil chia seed and rose hip oil\"}}],\"text\":\"Radiance: Restoritive Beauty Face Oil\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\" \"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"3. Look for multi-use natural skincare products\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"One of the best ways to save money on skincare is to incorporate multi-purpose products into your skincare routine. For example, if you're looking to remove your makeup, whilst ensuring your skin remains moisturised and cleansed, find a cream cleanser like \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/canvas-organic-moisturising-cream-cleanser?_pos=1&_psq=can&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"canvas cream cleanser\"}}],\"text\":\"Canvas\"},{\"type\":\"text\",\"text\":\", enriched with moisturising properties that can assist you with both your goals. How about a Cleanser that also works as an exfoliant? Well \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/powder-to-foam-cleansing-grains?_pos=1&_psq=naked&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"naked cream cleanser\"}}],\"text\":\"Naked\"},{\"type\":\"text\",\"text\":\" will do just that, due to its gritty texture and cleansing powers.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"If you want to moisturise breakout-prone skin without increasing oil production, then a multi-vitamin packed hemp face oil like \"},{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/products/hemp-seed-oil-organic?_pos=2&_psq=super&_ss=e&_v=1.0\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"super seed hemp seed face oil\"}}],\"text\":\"Super Seed\"},{\"type\":\"text\",\"text\":\" will assist with active breakouts whist also providing hydration to your skin too. Do your research, and find products that will give you the most bang for your buck and really help to save those pennies.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\" \"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Natural skincare routine conclusion:\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"Achieving a natural and affordable skincare routine is well within your grasp. By understanding your skin, embracing natural ingredients, simplifying your routine, and making conscious choices, you can build a skincare regimen that keeps your skin healthy, radiant, and wallet-friendly. Remember, the key lies in consistency, patience, and finding the right balance between your skin's needs and your budget. So, go ahead, embrace the power of nature, and embark on your journey to naturally beautiful skin.\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\" \"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\"---------------------------------------------\"}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\" \"}]},{\"type\":\"heading\",\"attrs\":{\"textAlign\":null,\"level\":2},\"content\":[{\"type\":\"text\",\"text\":\"Related articles from Wild Rising Skincare\"}]},{\"type\":\"bulletList\",\"content\":[{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/blogs/natural-skincare-blog/unveiling-the-beauty-secret-why-using-a-natural-face-oil-is-better-than-a-creamy-moisturiser\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"why face oils are better than cream moisturisers\"}}],\"text\":\"Unveiling the Superiority of Face Oils: Why Cream Moisturisers Fall Short\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/blogs/natural-skincare-blog/achieve-flawless-makeup-the-ultimate-guide-to-prepping-your-skin-naturally\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer nofollow\",\"class\":null,\"title\":\"achieve flawless skin naturally blog\"}}],\"text\":\"Achieve Flawless Makeup: The Ultimate Guide to Prepping Your Skin Naturally\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/blogs/natural-skincare-blog/skin-sos-how-often-should-you-moisturise-your-skin\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"class\":null,\"title\":\"how often should you moisturise your skin\"}}],\"text\":\"Skin SOS: How Often Should You Moisturise Your Skin\"}]}]},{\"type\":\"listItem\",\"content\":[{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"marks\":[{\"type\":\"link\",\"attrs\":{\"href\":\"https://wildrisingskincare.com/blogs/natural-skincare-blog/embracing-nature-why-natural-skincare-products-change-in-colour-scent-and-colour\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"class\":null,\"title\":\"why skincare products change in colour, scent and texture\"}}],\"text\":\"Embracing Nature: Why natural skincare products change in colour, scent and texture\"}]}]}]},{\"type\":\"paragraph\",\"attrs\":{\"textAlign\":null},\"content\":[{\"type\":\"text\",\"text\":\" \"}]}]}",
+      "featuredImage": "https://res.cloudinary.com/dakq6amg8/image/upload/v1782330147/admin/blog/osb8eskgrauhkf2kd5n9.webp",
+      "status": "PUBLISHED",
+      "featured": false,
+      "categoryId": "cmqb0rxmn0000aqse4ovxd2lq",
+      "authorId": "cmq6q8ff00000xrsecab672pq",
+      "createdAt": "2026-06-24T13:43:31.013Z",
+      "updatedAt": "2026-06-24T13:43:31.013Z"
+    }
+  ],
+  "footers": [
+    {
+      "id": "cmq870d4y0000bgsefxhli1mc",
+      "logo": null,
+      "description": "",
+      "phone": "",
+      "email": "",
+      "address": "",
+      "copyright": "",
+      "createdAt": "2026-06-10T08:57:34.594Z",
+      "updatedAt": "2026-06-10T08:57:34.594Z"
+    },
+    {
+      "id": "cmq872fby0000r8segysg47k4",
+      "logo": "https://res.cloudinary.com/dakq6amg8/image/upload/v1781104038/companyinfo/til6ljre7ht35bimywgs.png",
+      "description": "Discover premium skincare, beauty, and cosmetic products designed to enhance your natural glow. We carefully select authentic and high-quality beauty essentials to help you look and feel your best every day.",
+      "phone": "01776703343",
+      "email": "dermoqore@gmail.com",
+      "address": "House #15, Road #3, Mirpur 10, Dhaka 1216, Bangladesh",
+      "copyright": "© 2026 Dermoqore. All rights reserved. Designed to bring premium beauty and skincare products to your doorstep.",
+      "createdAt": "2026-06-10T08:59:10.750Z",
+      "updatedAt": "2026-06-11T19:46:59.789Z"
+    }
+  ],
+  "footerSocials": [
+    {
+      "id": "cmqa9ne6e0000lasec2axi57o",
+      "name": "Facebook",
+      "icon": "",
+      "url": "https://www.facebook.com/",
+      "footerId": "cmq872fby0000r8segysg47k4"
+    },
+    {
+      "id": "cmqa9ne6e0001lase2fthqeb0",
+      "name": "Instagram",
+      "icon": "",
+      "url": "https://www.instagram.com/",
+      "footerId": "cmq872fby0000r8segysg47k4"
+    }
+  ],
+  "footerSections": [
+    {
+      "id": "cmqa9nerz0002lase8xsol1hv",
+      "title": "Shop",
+      "footerId": "cmq872fby0000r8segysg47k4"
+    },
+    {
+      "id": "cmqa9nf6f0006laset9x8hpoj",
+      "title": "",
+      "footerId": "cmq872fby0000r8segysg47k4"
+    }
+  ],
+  "footerLinks": [
+    {
+      "id": "cmqa9nez70003lasef4difwqn",
+      "label": "Home",
+      "href": "/",
+      "sectionId": "cmqa9nerz0002lase8xsol1hv"
+    },
+    {
+      "id": "cmqa9nez70004lase8ndc23oa",
+      "label": "Shop All Products",
+      "href": "/",
+      "sectionId": "cmqa9nerz0002lase8xsol1hv"
+    },
+    {
+      "id": "cmqa9nez70005laseqtsfza2v",
+      "label": "Best Sellers",
+      "href": "/",
+      "sectionId": "cmqa9nerz0002lase8xsol1hv"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "cmqqsahvu00007colqhofs08j",
+      "slug": "spot-correcting-serum",
+      "title": "DermoQore Spot Correcting Serum",
+      "subtitle": "Get Radiant, Healthy & Glowing Skin Every Day",
+      "productId": "cmqd60ydt0000ykserpvie6nv",
+      "videoUrl": "https://www.youtube.com/watch?v=hbm2Q1HKG4k",
+      "videoTitle": "See The Glow Transformation in Just 14 Days",
+      "campaignPrice": "810.00",
+      "comparePrice": "1350.00",
+      "whySections": [
+        {
+          "items": [
+            "Made with Vitamin C, Niacinamide, and Hyaluronic Acid for healthy skin."
+          ],
+          "heading": "Premium Natural Ingredients"
+        },
+        {
+          "items": [
+            "Helps reduce dark spots and improves skin brightness within weeks."
+          ],
+          "heading": "Visible Results Fast"
+        },
+        {
+          "items": [
+            "Gentle formula designed for oily, dry, and combination skin."
+          ],
+          "heading": "Suitable for All Skin Types"
+        }
+      ],
+      "benefits": [
+        "Brightens dull skin",
+        "Reduces dark spots",
+        "Improves skin hydration"
+      ],
+      "testimonials": [
+        {
+          "name": "Nusrat Jahan",
+          "text": "I've been using Radiate Serum for three weeks and can already see a noticeable difference. My skin feels smoother, brighter, and much healthier.",
+          "location": "Dhaka"
+        },
+        {
+          "name": "Farhana Akter",
+          "text": "Excellent product! It absorbs quickly and doesn't feel oily. My dark spots have faded significantly and my skin looks more radiant.",
+          "location": "Gazipur"
+        },
+        {
+          "name": "Ayesha Rahman",
+          "text": "I’m really impressed with the results after using Radiate Serum daily. My skin feels deeply hydrated, looks more even-toned, and I’ve started getting compliments on how fresh and glowing my face looks.",
+          "location": "Chattogram"
+        }
+      ],
+      "included": [
+        "1 × Glowpure Radiate Serum (30ml)",
+        "Usage Guide",
+        "Premium Packaging"
+      ],
+      "offerBadge": "Limited Time Offer – Get 201 Taka Off!",
+      "ctaText": "Oder Now",
+      "phoneNumber": "01718842739",
+      "formTitle": "Order Now",
+      "status": "ACTIVE",
+      "createdAt": "2026-06-23T09:13:10.410Z",
+      "updatedAt": "2026-07-05T11:56:40.947Z",
+      "features": [
+        {
+          "icon": "leaf",
+          "title": "Brightens Dull Skin",
+          "description": "Restores natural glow and helps skin look fresh and radiant."
+        },
+        {
+          "icon": "heart",
+          "title": "Fades Dark Spots",
+          "description": "Helps reduce hyperpigmentation and visibly lightens stubborn marks"
+        },
+        {
+          "icon": "glow",
+          "title": "Evens Skin Tone",
+          "description": "Improves uneven texture and promotes a smoother, balanced complexion."
+        },
+        {
+          "icon": "droplets",
+          "title": "Reduces Sun Spots",
+          "description": "Targets pigmentation caused by sun exposure for clearer-looking skin."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Repairs Acne & Pimple Marks",
+          "description": "Helps diminish acne scars and post-breakout marks over time"
+        }
+      ],
+      "ingredients": [],
+      "theme": "DEFAULT",
+      "labReportButtonText": "সম্পূর্ণ রিপোর্ট দেখুন",
+      "labReportButtonUrl": null,
+      "labReportDescription": null,
+      "labReportImages": [
+        "https://res.cloudinary.com/dakq6amg8/image/upload/v1782488807/admin/campaigns/gqsx5xa23jouhzv4srz0.jpg",
+        "https://res.cloudinary.com/dakq6amg8/image/upload/v1782488822/admin/campaigns/jzmmbwymyd5i9ih5uguh.jpg"
+      ],
+      "labReportTitle": "BTRI Lab Test Report",
+      "customerReviews": [],
+      "productVideoTitle": "Founder-এর মুখ থেকে সরাসরি শুনুন",
+      "productVideoUrl": "https://www.youtube.com/watch?v=hbm2Q1HKG4k",
+      "reviewIds": [
+        "cmr7rvh9h0006bgol74i1t6ok",
+        "cmr7rvget0002bgola6va45vx",
+        "cmr7rvg760001bgol8c1zmphd",
+        "cmr7rvfzg0000bgolmu2xv1aa",
+        "cmr7scyqm0002csol1eg1agvi"
+      ],
+      "secondProductId": "cmr7wrfhf000048ol2nivwxoy",
+      "secondCampaignPrice": "1500.00",
+      "secondComparePrice": "2700.00",
+      "videoReviews": [
+        {
+          "name": "Jerin Shanta",
+          "videoUrl": "https://www.youtube.com/watch?v=hbm2Q1HKG4k"
+        },
+        {
+          "name": "Tisa Farin",
+          "videoUrl": "https://www.youtube.com/watch?v=hbm2Q1HKG4k"
+        }
+      ]
+    }
+  ],
+  "campaignImages": [
+    {
+      "id": "cmr83f1eh00002colqpwn43rz",
+      "campaignId": "cmqqsahvu00007colqhofs08j",
+      "url": "https://res.cloudinary.com/dakq6amg8/image/upload/v1783246579/admin/campaigns/naregmufc665c8nvavka.png",
+      "alt": "",
+      "sortOrder": 0,
+      "createdAt": "2026-07-05T11:56:40.947Z"
+    }
+  ],
+  "campaignFaqs": [
+    {
+      "id": "cmqv3yayl000lrssefszwa735",
+      "campaignId": "cmqqsahvu00007colqhofs08j",
+      "question": "কতদিন ব্যবহার করলে ফল পাওয়া যায়?",
+      "answer": "সাধারণত নিয়মিত ব্যবহার করলে ২–৪ সপ্তাহের মধ্যে পরিবর্তন দেখা যেতে পারে। তবে ত্বকের ধরন অনুযায়ী সময় ভিন্ন হতে পারে।",
+      "sortOrder": 0
+    },
+    {
+      "id": "cmqv3yayl000mrsselqy2olg7",
+      "campaignId": "cmqqsahvu00007colqhofs08j",
+      "question": "দিনে কয়বার ব্যবহার করবেন?",
+      "answer": "প্রতিদিন ১–২ বার (সকাল ও রাতে) পরিষ্কার ত্বকে ব্যবহার করা ভালো।",
+      "sortOrder": 1
+    },
+    {
+      "id": "cmqv3yayl000nrsseyne1w7lp",
+      "campaignId": "cmqqsahvu00007colqhofs08j",
+      "question": "Sensitive Skin এ ব্যবহার করা যাবে?",
+      "answer": "হ্যাঁ, সাধারণত ব্যবহার করা যায়। তবে প্রথমে Patch Test করে নেওয়া ভালো। যদি জ্বালাপোড়া বা অস্বস্তি হয়, ব্যবহার বন্ধ করুন।",
+      "sortOrder": 2
+    },
+    {
+      "id": "cmqv3yayl000orsse24vu09nm",
+      "campaignId": "cmqqsahvu00007colqhofs08j",
+      "question": "Pregnant বা Lactating অবস্থায় ব্যবহার করা যাবে?",
+      "answer": "যদি প্রোডাক্টে শক্তিশালী Active Ingredients থাকে, তাহলে ব্যবহার করার আগে ডাক্তারের পরামর্শ নেওয়া উচিত।",
+      "sortOrder": 3
+    },
+    {
+      "id": "cmqv3yayl000prsse9q7c1qe6",
+      "campaignId": "cmqqsahvu00007colqhofs08j",
+      "question": "Sunscreen ব্যবহার করা কি জরুরি?",
+      "answer": "হ্যাঁ, বিশেষ করে দিনে ব্যবহার করলে SPF 30 বা তার বেশি Sunscreen ব্যবহার করা জরুরি। এটি ত্বককে সূর্যের ক্ষতি থেকে রক্ষা করে।",
+      "sortOrder": 4
+    },
+    {
+      "id": "cmqv3yayl000qrssehsm3babp",
+      "campaignId": "cmqqsahvu00007colqhofs08j",
+      "question": "Side Effect আছে কি?",
+      "answer": "সাধারণত সঠিকভাবে ব্যবহার করলে Side Effect হয় না। তবে কারও কারও ক্ষেত্রে হালকা শুষ্কতা, লালচে ভাব বা irritation হতে পারে।",
+      "sortOrder": 5
+    }
+  ]
+}

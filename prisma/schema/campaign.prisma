@@ -1,0 +1,147 @@
+enum CampaignStatus {
+  DRAFT
+  ACTIVE
+  ENDED
+}
+
+enum CampaignTheme {
+  DEFAULT
+  EMERALD
+  ROSE
+  OCEAN
+  AMBER
+}
+
+enum CampaignOrderStatus {
+  PENDING
+  CONFIRMED
+  PROCESSING
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+model Campaign {
+  id            String         @id @default(cuid())
+  slug          String         @unique
+  title         String
+  subtitle      String?
+
+  productId     String
+  product       Product        @relation("CampaignPrimaryProduct", fields: [productId], references: [id])
+
+  secondProductId String?
+  secondProduct   Product?       @relation("CampaignSecondProduct", fields: [secondProductId], references: [id])
+
+  heroImages    CampaignImage[]
+
+  videoUrl      String?
+  videoTitle    String?
+
+  productVideoUrl   String?
+  productVideoTitle String?
+
+  // Campaign-specific pricing (may differ from product's regular price)
+  campaignPrice       Decimal?       @db.Decimal(10, 2)
+  comparePrice        Decimal?       @db.Decimal(10, 2)
+
+  // Second product campaign-specific pricing
+  secondCampaignPrice Decimal?       @db.Decimal(10, 2)
+  secondComparePrice  Decimal?       @db.Decimal(10, 2)
+
+  // Flexible JSON content sections
+  whySections   Json?          // [{ heading: string; items: string[] }]
+  benefits      Json?          // string[]
+  testimonials  Json?          // [{ name: string; location?: string; text: string }]
+  customerReviews Json?        // [{ name: string; title?: string; videoTitle?: string; videoDescription?: string; videoUrl: string }]
+  included      Json?          // string[]
+
+  // Selected review IDs to show on campaign page
+  reviewIds     Json?          // string[]
+
+  // Video reviews (influencer/customer video links)
+  videoReviews  Json?          // [{ name: string; videoUrl: string; thumbnailUrl?: string }]
+  features      Json?          // [{ title: string; description: string; icon: string }]
+  ingredients   Json?          // [{ name: string; image: string; description: string }]
+
+  // BTRI Lab Test Report section
+  labReportTitle       String?        // e.g. "BTRI Lab Test Report"
+  labReportDescription String?        // e.g. "Dermoqore Spot Correcting Serum BTRI কর্তৃক..."
+  labReportButtonText  String?        // e.g. "সম্পূর্ণ রিপোর্ট দেখুন"
+  labReportButtonUrl   String?        // link to full report PDF or page
+  labReportImages      Json?          // string[] — up to 3 document image URLs
+
+  // Dedicated FAQ items (question + answer pairs)
+  faqs          CampaignFaq[]
+
+  // Theme — controls the landing page color palette
+  theme         CampaignTheme  @default(DEFAULT)
+
+  // CTA / Offer
+  offerBadge    String?
+  ctaText       String?
+  phoneNumber   String?
+
+  // Order form
+  formTitle     String?
+
+  status        CampaignStatus @default(DRAFT)
+  orders        CampaignOrder[]
+
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@index([slug])
+}
+
+model CampaignImage {
+  id         String   @id @default(cuid())
+  campaignId String
+  url        String
+  alt        String?
+  sortOrder  Int      @default(0)
+
+  campaign   Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+
+  createdAt  DateTime @default(now())
+}
+
+model CampaignFaq {
+  id         String   @id @default(cuid())
+  campaignId String
+  question   String
+  answer     String
+  sortOrder  Int      @default(0)
+  campaign   Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+}
+
+model CampaignOrder {
+  id              String              @id @default(cuid())
+  orderNumber     String              @unique
+
+  campaignId      String
+  campaign        Campaign            @relation(fields: [campaignId], references: [id])
+
+  productId       String
+  product         Product             @relation("CampaignOrderProduct", fields: [productId], references: [id])
+
+  // Guest customer details (no account required)
+  customerName    String
+  customerPhone   String
+  customerAddress String
+  deliveryZone    DeliveryZone        @default(OUTSIDE_DHAKA)
+
+  quantity        Int
+  unitPrice       Decimal             @db.Decimal(10, 2)
+  shippingCharge  Decimal             @db.Decimal(10, 2) @default(0)
+  total           Decimal             @db.Decimal(10, 2)
+
+  status          CampaignOrderStatus @default(PENDING)
+  notes           String?
+
+  createdAt       DateTime            @default(now())
+  updatedAt       DateTime            @updatedAt
+
+  @@index([campaignId])
+  @@index([orderNumber])
+}
