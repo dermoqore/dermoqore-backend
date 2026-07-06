@@ -9,8 +9,14 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'http://localhost:3001',
+      'https://dermoqore-client-lyart.vercel.app',
+      'https://www.dermoqore-client-lyart.vercel.app',
+      'https://dermoqore-admin.vercel.app',
+      'https://www.dermoqore-admin.vercel.app',
       'https://dermoqore.com',
       'https://www.dermoqore.com',
+      'https://admin.dermoqore.com',
+      'https://www.admin.dermoqore.com',
     ],
     credentials: true,
   });
@@ -23,6 +29,6 @@ async function bootstrap() {
     }),
   );
 
-  await app.listen(process.env.PORT ?? 8000);
+  await app.listen(process.env.PORT ?? 5000);
 }
 bootstrap();

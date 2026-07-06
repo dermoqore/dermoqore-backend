@@ -1,23 +1,14 @@
 import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common';
-import type { PrismaClient } from '../@generated/prisma/client.js';
+import { PrismaClient } from '../@generated/prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
-
-let PrismaClientClass: typeof PrismaClient | null = null;
+import { Pool } from 'pg';
 
 @Injectable()
 export class PrismaService implements OnModuleInit, OnModuleDestroy {
   private _prisma!: PrismaClient;
-  private _pool: import('pg').Pool | null = null;
+  private _pool: Pool | null = null;
 
   async onModuleInit() {
-    if (!PrismaClientClass) {
-      const mod = await import('../@generated/prisma/client.js');
-      PrismaClientClass = mod.PrismaClient;
-    }
-
-    const { Pool } = await import('pg');
-
-    // Strip unsupported params (channel_binding) and fix SSL for Neon / pg compatibility
     const rawUrl = process.env.DATABASE_URL ?? '';
     const url = new URL(rawUrl);
     url.searchParams.delete('channel_binding');
@@ -32,7 +23,7 @@ export class PrismaService implements OnModuleInit, OnModuleDestroy {
     });
 
     const adapter = new PrismaPg(this._pool);
-    this._prisma = new PrismaClientClass({ adapter });
+    this._prisma = new PrismaClient({ adapter });
     await this._prisma.$connect();
   }
 

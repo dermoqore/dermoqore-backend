@@ -6,10 +6,10 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "npm run prisma:generate && nest build && node -e \"require('fs').writeFileSync('dist/src/@generated/prisma/package.json','{\\\"type\\\":\\\"module\\\"}\\n')\"",
+    "build": "npm run prisma:generate && nest build",
     "vercel-build": "npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "prisma:generate": "prisma generate && node -e \"require('fs').writeFileSync('src/@generated/prisma/package.json','{\\\"type\\\":\\\"module\\\"}\\n')\"",
+    "prisma:generate": "prisma generate",
     "start": "node dist/src/main",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
